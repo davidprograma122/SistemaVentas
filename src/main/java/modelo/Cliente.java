@@ -83,7 +83,11 @@ public class Cliente {
     public void imprimir(){
         System.out.println("Los datos son:"
                 + "\n El nombre es: "+getPcdfNombre()+" "+getPcdfApellido()
-                +"\n ");
+                +"\nCon numero de cedula: "+getPcdfCedula()
+                +"\nDireccion: "+getPcdfDireccion()
+                +"\nTelefono: "+getPcdfTelefono()
+                +"\nAplica a credito directo: "+getPcdfCreditoDirecto()
+                );
         
     
     }

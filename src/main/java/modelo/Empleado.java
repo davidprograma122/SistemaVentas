@@ -1,39 +1,36 @@
 package modelo;
-
 /**
  *
  * @author david
  */
-public class Cliente {
-    private int pcdfIdCliente;
+public class Empleado {
+    private int pcdfIdEmpleado;
     private int pcdfCedula;
-    public String pcdfNombre;
+    public  String pcdfNombre;
     public String pcdfApellido;
     private int pcdfTelefono;
-    private String pcdfDireccion;
     private String pcdfCorreo;
-    private boolean pcdfCreditoDirecto;
- 
-    public Cliente(){}
-    
+    private String pcdfDireccion;
 
-    public Cliente(int pcdfIdCliente, int pcdfCedula, String pcdfNombre, String pcdfApellido, int pcdfTelefono, String pcdfDireccion, String pcdfCorreo, boolean pcdfCreditoDirecto) {
-        this.pcdfIdCliente = pcdfIdCliente;
+    public Empleado() {
+    }
+
+    public Empleado(int pcdfIdEmpleado, int pcdfCedula, String pcdfNombre, String pcdfApellido, int pcdfTelefono, String pcdfCorreo, String pcdfDireccion) {
+        this.pcdfIdEmpleado = pcdfIdEmpleado;
         this.pcdfCedula = pcdfCedula;
         this.pcdfNombre = pcdfNombre;
         this.pcdfApellido = pcdfApellido;
         this.pcdfTelefono = pcdfTelefono;
-        this.pcdfDireccion = pcdfDireccion;
         this.pcdfCorreo = pcdfCorreo;
-        this.pcdfCreditoDirecto = pcdfCreditoDirecto;
+        this.pcdfDireccion = pcdfDireccion;
     }
 
-    public int getPcdfIdCliente() {
-        return pcdfIdCliente;
+    public int getPcdfIdEmpleado() {
+        return pcdfIdEmpleado;
     }
 
-    public void setPcdfIdCliente(int pcdfIdCliente) {
-        this.pcdfIdCliente = pcdfIdCliente;
+    public void setPcdfIdEmpleado(int pcdfIdEmpleado) {
+        this.pcdfIdEmpleado = pcdfIdEmpleado;
     }
 
     public int getPcdfCedula() {
@@ -68,14 +65,6 @@ public class Cliente {
         this.pcdfTelefono = pcdfTelefono;
     }
 
-    public String getPcdfDireccion() {
-        return pcdfDireccion;
-    }
-
-    public void setPcdfDireccion(String pcdfDireccion) {
-        this.pcdfDireccion = pcdfDireccion;
-    }
-
     public String getPcdfCorreo() {
         return pcdfCorreo;
     }
@@ -83,13 +72,13 @@ public class Cliente {
     public void setPcdfCorreo(String pcdfCorreo) {
         this.pcdfCorreo = pcdfCorreo;
     }
-    
-    public boolean getPcdfCreditoDirecto() {
-        return pcdfCreditoDirecto;
+
+    public String getPcdfDireccion() {
+        return pcdfDireccion;
     }
 
-    public void setPcdfCreditoDirecto(boolean pcdfCreditoDirecto) {
-        this.pcdfCreditoDirecto = pcdfCreditoDirecto;
+    public void setPcdfDireccion(String pcdfDireccion) {
+        this.pcdfDireccion = pcdfDireccion;
     }
     
     public void imprimir(){
@@ -98,10 +87,7 @@ public class Cliente {
                 +"\nCon numero de cedula: "+getPcdfCedula()
                 +"\nDirección: "+getPcdfDireccion()
                 +"\nTelefono: "+getPcdfTelefono()
-                +"\n Correo: "+getPcdfCorreo()
-                +"\nAplica a credito directo: "+getPcdfCreditoDirecto()
-                );
+                +"\n Correo: "+getPcdfCorreo());
     }
     
 }
-    

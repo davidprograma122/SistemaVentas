@@ -82,7 +82,7 @@ public class Empleado {
     }
     
     public void imprimir(){
-        System.out.println("Los datos son: "
+        System.out.println("Los datos del empleado son: "
                 +"\n El nombre es: "+getPcdfNombre()+" "+getPcdfApellido()
                 +"\nCon numero de cedula: "+getPcdfCedula()
                 +"\nDirección: "+getPcdfDireccion()

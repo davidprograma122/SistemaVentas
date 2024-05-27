@@ -1,4 +1,5 @@
 package modelo;
+
 /**
  *
  * @author david
@@ -6,6 +7,7 @@ package modelo;
 public class Producto {
     private int pcdfIdProducto;
     private String pcdfColor;
+    private String pcdfMarca;
     private int pcdfTalla;
     private String pcdfModelo;
     private double pcdfPrecio;
@@ -15,15 +17,18 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(int pcdfIdProducto, String pcdfColor, int pcdfTalla, String pcdfModelo, double pcdfPrecio, String pcdfTipoTela, boolean pcdfStock) {
+    public Producto(int pcdfIdProducto, String pcdfColor, String pcdfMarca, int pcdfTalla, String pcdfModelo, double pcdfPrecio, String pcdfTipoTela, boolean pcdfStock) {
         this.pcdfIdProducto = pcdfIdProducto;
         this.pcdfColor = pcdfColor;
+        this.pcdfMarca = pcdfMarca;
         this.pcdfTalla = pcdfTalla;
         this.pcdfModelo = pcdfModelo;
         this.pcdfPrecio = pcdfPrecio;
         this.pcdfTipoTela = pcdfTipoTela;
         this.pcdfStock = pcdfStock;
     }
+
+    
     
 
     public int getPcdfIdProducto() {
@@ -42,6 +47,14 @@ public class Producto {
         this.pcdfColor = pcdfColor;
     }
 
+    public String getPcdfMarca() {
+        return pcdfMarca;
+    }
+
+    public void setPcdfMarca(String pcdfMarca) {
+        this.pcdfMarca = pcdfMarca;
+    }
+    
     public int getPcdfTalla() {
         return pcdfTalla;
     }
@@ -83,12 +96,16 @@ public class Producto {
     }
     
     public void imprimir() {
-    System.out.println("Los datos de producto son: "
-            +"\n Color: "+pcdfColor
-            +"\n Talla: "+pcdfTalla
-            +"\n Modelo: "+pcdfModelo
-            +"\n Precio: "+pcdfPrecio
-            +"\n Tipo de tela: "+pcdfTipoTela);
+        System.out.println("Los datos de producto son: ");
+            System.out.println("Color: "+pcdfColor+
+            "\n Marca: "+pcdfMarca+
+            "\n Talla: "+pcdfTalla+
+            "\n Modelo: "+pcdfModelo+
+            "\n Precio: "+pcdfPrecio+
+            "\n Tipo de tela: "+pcdfTipoTela+
+            "\n Stock: "+ pcdfStock+"\n");
+            
+            
 
 }
     
